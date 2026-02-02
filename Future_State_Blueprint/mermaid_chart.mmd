@@ -1,0 +1,25 @@
+flowchart LR
+    %% Step 1 → Step 6 horizontal flow within each layer
+    subgraph Evidence
+        E1[App Icon] --> E2[Welcome Email] --> E3[Profile Confirmation] --> E4[Push Notification] --> E5[Order Confirmation] --> E6[Feedback Request]
+    end
+
+    subgraph Customer_Journey
+        CJ1[Downloads App] --> CJ2[Completes Profile] --> CJ3[Receives Offers] --> CJ4[Makes Purchase] --> CJ5[Receives Order] --> CJ6[Provides Feedback]
+    end
+
+    subgraph Frontstage_Employee_Actions
+        F1[Support sends setup guide] --> F2[Marketing monitors signups] --> F3[Customer support responds if needed] --> F4[Minimal staff intervention] --> F5[Support tracks delivery] --> F6[Marketing requests review]
+    end
+
+    subgraph Technology_Automation
+        T1[App server provisions account] --> T2[Automated onboarding workflow] --> T3[Push engine triggers notifications] --> T4[CRM & Payment automation] --> T5[Logistics tracking system] --> T6[Feedback survey automation]
+    end
+
+    subgraph Backstage_Actions
+        B1[IT sets up user account] --> B2[Content management] --> B3[Data tracking & reports] --> B4[Payment gateway processing] --> B5[Inventory & shipment updates] --> B6[Review & analytics processing]
+    end
+
+    subgraph Support_Processes
+        S1[Security & compliance] --> S2[Database backups] --> S3[Fraud monitoring] --> S4[Accounting & finance] --> S5[Shipping & logistics] --> S6[Customer feedback analysis]
+    end
